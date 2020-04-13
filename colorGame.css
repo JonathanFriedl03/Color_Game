@@ -1,3 +1,19 @@
 body {
     background-color: #232323;
 }
+.square{
+    width: 30%;
+    background-color: purple;
+    padding-top: 30%;/*gives the divs space around*/
+    float: left/*keep them on the same line*/;
+    margin: 1.66%;/*puts space between the divs*/
+}
+#container {
+
+    margin: 0/*margin on top and bottom of container*/ auto/*makes it same size on left and right*/;
+    max-width: 500px;
+}
+h1{
+    color: white;
+
+}
