@@ -1,5 +1,7 @@
 body {
     background-color: #232323;
+    margin: 0;
+    font-family: "Avenir", "Montserrat";
 }
 .square{
     width: 30%;
@@ -7,22 +9,58 @@ body {
     padding-top: 30%;/*gives the divs space around*/
     float: left/*keep them on the same line*/;
     margin: 1.66%;/*puts space between the divs*/
+    border-radius: 10%;/* found on mdn docs */
+    transition: background-color .7s;
+    -webkit-transition: background-color .7s;/* browser support safari*/
+    -moz-transition: background-color .7s;/* browser support mozilla */
 }
 #container {
 
-    margin: 0/*margin on top and bottom of container*/ auto/*makes it same size on left and right*/;
+    margin: 20px/*margin on top and bottom of container*/ auto/*makes it same size on left and right*/;
     max-width: 500px;
 }
 h1{
+    text-align: center ;
+    line-height:1.1;
     color: white;
-
+    background-color: steelblue;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px ;
 }
-#stripe{
+#colorDisplay {
+    font-size: 200%;
+}
+#message{
+    display: inline-block;
+    width: 20%;
+}
+
+#stripe{  /* used to add stripe across page */
     background-color: white;
     height: 30px;
     text-align: center;
     color: #000;
 }
 .selected{
-    background-color: turquoise;
+    color: white;
+    background-color: steelblue;
+}
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    font-size: inherit;/* sizes based on parent property */
+    transition: all .5s;
+    -webkit-transition: all .5s;/* browser support safari*/
+    -moz-transition: all .5s;/* browser support mozilla */
+}
+button:hover{
+    color: white;
+    background-color: steelblue;
+    
 }
